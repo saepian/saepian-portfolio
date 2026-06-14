@@ -12,15 +12,18 @@ import { Sparkles, Layers, RefreshCw } from "lucide-react";
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>("home");
 
-  // Tab change handler so that Explore button in hero can switch to portfolio tab smoothly
   const handleExploreClick = () => {
     setActiveTab("portfolio");
+  };
+
+  const handleContactClick = () => {
+    setActiveTab("connect");
   };
 
   const renderActiveSection = () => {
     switch (activeTab) {
       case "home":
-        return <HeroSection onExploreClick={handleExploreClick} />;
+        return <HeroSection onExploreClick={handleExploreClick} onContactClick={handleContactClick} />;
       case "portfolio":
         return <PortfolioSection />;
       case "philosophy":

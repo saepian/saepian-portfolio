@@ -34,7 +34,7 @@ export default function NavBar({ activeTab, setActiveTab }: NavBarProps) {
     { id: "home", label: "INDEX" },
     { id: "portfolio", label: "PORTFOLIO" },
     { id: "philosophy", label: "PHILOSOPHY" },
-    { id: "connect", label: "CONNECT" },
+    { id: "connect", label: "CONTACT" },
   ];
 
   return (

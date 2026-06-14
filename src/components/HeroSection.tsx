@@ -1,12 +1,13 @@
 import { useEffect, useRef } from "react";
 import { motion, useMotionValue, useTransform, useSpring } from "motion/react";
-import { ArrowRight, Play, Server, Award, Eye } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 
 interface HeroSectionProps {
   onExploreClick: () => void;
+  onContactClick: () => void;
 }
 
-export default function HeroSection({ onExploreClick }: HeroSectionProps) {
+export default function HeroSection({ onExploreClick, onContactClick }: HeroSectionProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Motion values for subtle 3D rotational tilt
@@ -156,11 +157,11 @@ export default function HeroSection({ onExploreClick }: HeroSectionProps) {
           </button>
 
           <button
-            onClick={onExploreClick}
+            onClick={onContactClick}
             className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent hover:bg-neutral-900 text-white font-sans text-xs font-bold tracking-widest uppercase transition-all duration-300 pointer-events-auto border border-neutral-800 hover:border-neutral-500 cursor-pointer"
           >
-            <Play className="w-3.5 h-3.5 fill-current text-white" />
-            <span>PLAY SHOWREEL_</span>
+            <Mail className="w-3.5 h-3.5 text-white" />
+            <span>GET IN TOUCH_</span>
           </button>
         </motion.div>
       </div>
