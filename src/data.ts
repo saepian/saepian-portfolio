@@ -20,6 +20,7 @@ export const PROJECTS: Project[] = [
   {
     id: "01",
     title: "SAEPIAN GLITCH ASSEMBLY",
+    imageTitle: "",
     category: "ART DIRECTION & IDENTITY",
     year: "2026",
     image: portfolio01,
@@ -30,6 +31,7 @@ export const PROJECTS: Project[] = [
   {
     id: "02",
     title: "THE MINIMALIST SUBTRACTION",
+    imageTitle: "",
     category: "EDITORIAL & PACKAGING",
     year: "2025",
     image: portfolio02,
@@ -40,6 +42,7 @@ export const PROJECTS: Project[] = [
   {
     id: "03",
     title: "METROPOLIS SAEPIAN EXPERIMENT",
+    imageTitle: "",
     category: "SPATIAL CHOREOGRAPHY",
     year: "2026",
     image: portfolio03,
@@ -50,6 +53,7 @@ export const PROJECTS: Project[] = [
   {
     id: "04",
     title: "ECHOES OF SILENCE",
+    imageTitle: "",
     category: "SOUND & SCREENSCAPE",
     year: "2025",
     image: portfolio04,
@@ -60,6 +64,7 @@ export const PROJECTS: Project[] = [
   {
     id: "05",
     title: "RAW SIGNAL SYSTEM",
+    imageTitle: "",
     category: "DIGITAL PROTOCOLS",
     year: "2026",
     image: portfolio05,
@@ -70,6 +75,7 @@ export const PROJECTS: Project[] = [
   {
     id: "06",
     title: "NEURAL INTERFERENCE LAB",
+    imageTitle: "",
     category: "GENERATIVE EXPERIENCE",
     year: "2026",
     image: portfolio06,
@@ -80,6 +86,7 @@ export const PROJECTS: Project[] = [
   {
     id: "07",
     title: "VELOCITY DEVIATION",
+    imageTitle: "",
     category: "MOTION & PHYSICS",
     year: "2025",
     image: portfolio07,
@@ -90,6 +97,7 @@ export const PROJECTS: Project[] = [
   {
     id: "08",
     title: "LIQUID GEOMETRY LAB",
+    imageTitle: "",
     category: "SENSORY CODING",
     year: "2026",
     image: portfolio08,
@@ -100,6 +108,7 @@ export const PROJECTS: Project[] = [
   {
     id: "09",
     title: "SIGNAL CONDUIT PROTOCOL",
+    imageTitle: "",
     category: "HARDWARE INTERACTION",
     year: "2025",
     image: portfolio09,
@@ -110,6 +119,7 @@ export const PROJECTS: Project[] = [
   {
     id: "10",
     title: "THERMAL MATRIX SENSATION",
+    imageTitle: "",
     category: "INSTALLATION DESIGN",
     year: "2026",
     image: portfolio10,
@@ -120,6 +130,7 @@ export const PROJECTS: Project[] = [
   {
     id: "11",
     title: "THE COGNITIVE MATRIX",
+    imageTitle: "",
     category: "NEURAL EXPERIENCE",
     year: "2026",
     image: portfolio11,
@@ -130,6 +141,7 @@ export const PROJECTS: Project[] = [
   {
     id: "12",
     title: "DUST MATRIX CHRONICLE",
+    imageTitle: "",
     category: "DIGITAL MONUMENTS",
     year: "2025",
     image: portfolio12,
@@ -140,6 +152,7 @@ export const PROJECTS: Project[] = [
   {
     id: "13",
     title: "AMBIENT FLUID VECTOR",
+    imageTitle: "",
     category: "ARTWORK & VISUALS",
     year: "2026",
     image: portfolio13,
@@ -150,6 +163,7 @@ export const PROJECTS: Project[] = [
   {
     id: "14",
     title: "VECTOR SAEPIAN PATTERNS",
+    imageTitle: "",
     category: "CREATIVE CODING",
     year: "2025",
     image: portfolio14,
@@ -160,6 +174,7 @@ export const PROJECTS: Project[] = [
   {
     id: "15",
     title: "RED SHIFT INTERSTELLAR",
+    imageTitle: "",
     category: "SPATIAL EXPERIENCES",
     year: "2026",
     image: portfolio15,

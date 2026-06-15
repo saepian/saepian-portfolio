@@ -112,6 +112,15 @@ export default function PortfolioSection() {
                     className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700"
                   />
 
+                  {/* Image Title Overlay — centered on the image */}
+                  {project.imageTitle && (
+                    <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none px-4">
+                      <span className="font-anybody font-black italic text-white text-xl md:text-3xl tracking-tighter text-center leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
+                        {project.imageTitle}
+                      </span>
+                    </div>
+                  )}
+
                   {/* Tag Indicator top left */}
                   <div className="absolute top-4 left-4 z-20 flex gap-2">
                     <span className="px-2.5 py-1 bg-black/80 backdrop-blur-sm text-[9px] font-mono tracking-widest text-white border border-neutral-800">
@@ -188,6 +197,15 @@ export default function PortfolioSection() {
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"
                   />
+
+                  {/* Image Title Overlay on modal */}
+                  {selectedProject.imageTitle && (
+                    <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none px-6">
+                      <span className="font-anybody font-black italic text-white text-2xl sm:text-4xl md:text-5xl tracking-tighter text-center leading-tight drop-shadow-[0_2px_16px_rgba(0,0,0,0.95)]">
+                        {selectedProject.imageTitle}
+                      </span>
+                    </div>
+                  )}
 
                   {/* Close Button */}
                   <button
