@@ -126,7 +126,7 @@ export default function PortfolioSection() {
                           const wrap = e.currentTarget.parentElement;
                           if (wrap) wrap.style.display = "none";
                         }}
-                        className="max-h-[45%] max-w-[65%] object-contain drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]"
+                        className="max-h-[45%] max-w-[65%] object-contain"
                       />
                     </div>
                   )}
@@ -218,7 +218,7 @@ export default function PortfolioSection() {
                           const wrap = e.currentTarget.parentElement;
                           if (wrap) wrap.style.display = "none";
                         }}
-                        className="max-h-[50%] max-w-[60%] object-contain drop-shadow-[0_6px_30px_rgba(0,0,0,0.95)]"
+                        className="max-h-[50%] max-w-[60%] object-contain"
                       />
                     </div>
                   )}
