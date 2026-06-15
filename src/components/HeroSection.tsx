@@ -82,9 +82,9 @@ export default function HeroSection({ onExploreClick, onContactClick }: HeroSect
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           className="w-full flex justify-start pl-4 md:pl-20"
         >
-          <h1 className="font-anybody text-5xl md:text-8xl xl:text-9xl font-black italic tracking-tighter leading-none text-white flex flex-wrap gap-x-4">
+          <h1 className="font-anybody text-[2rem] sm:text-5xl md:text-8xl xl:text-9xl font-black italic tracking-tighter leading-none text-white flex flex-wrap gap-x-3">
             <span>THE</span>
-            <span className="text-stroke-white text-nowrap">ABSOLUTE</span>
+            <span className="text-stroke-white">ABSOLUTE</span>
           </h1>
         </motion.div>
 
@@ -95,7 +95,7 @@ export default function HeroSection({ onExploreClick, onContactClick }: HeroSect
           transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
           className="w-full flex justify-center py-2"
         >
-          <h1 className="font-anybody text-6xl md:text-[10rem] xl:text-[12rem] font-extrabold italic tracking-tighter leading-none text-red-600 drop-shadow-[0_0_30px_rgba(220,38,38,0.2)]">
+          <h1 className="font-anybody text-[2.8rem] sm:text-6xl md:text-[10rem] xl:text-[12rem] font-extrabold italic tracking-tighter leading-none text-red-600 drop-shadow-[0_0_30px_rgba(220,38,38,0.2)]">
             REDEFINED
           </h1>
         </motion.div>
@@ -107,9 +107,9 @@ export default function HeroSection({ onExploreClick, onContactClick }: HeroSect
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
           className="w-full flex justify-end pr-4 md:pr-16"
         >
-          <h1 className="font-anybody text-5xl md:text-8xl xl:text-9xl font-black italic tracking-tighter leading-none text-white">
+          <h1 className="font-anybody text-[2rem] sm:text-5xl md:text-8xl xl:text-9xl font-black italic tracking-tighter leading-none text-white">
             <span>SAEPIAN</span>
-            <span className="text-stroke-white ml-4">ESSENCE</span>
+            <span className="text-stroke-white ml-2 md:ml-4">ESSENCE</span>
           </h1>
         </motion.div>
       </motion.div>
