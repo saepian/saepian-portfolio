@@ -73,7 +73,7 @@ export default function PortfolioSection() {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-4 md:gap-6">
           {filteredProjects.map((project, idx) => {
             // Creative staggered layout that sums to exactly 12 columns per row
             const colSpans = [
@@ -160,129 +160,130 @@ export default function PortfolioSection() {
       {/* Lightbox / Detail Viewer Modal with AnimatePresence */}
       <AnimatePresence>
         {selectedProject && (
-          <div className="fixed inset-0 w-full h-full z-50 flex items-center justify-center p-4">
-            {/* Dark blur backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setSelectedProject(null)}
-              className="absolute inset-0 bg-black/90 backdrop-blur-md cursor-pointer"
-            />
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedProject(null)}
+            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md overflow-y-auto no-scrollbar cursor-pointer"
+          >
+            {/* Scroll + centering wrapper */}
+            <div className="flex min-h-full items-start md:items-center justify-center p-4 pt-24 md:pt-6">
+              {/* Custom Modal Sheet */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95, y: 16 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95, y: 16 }}
+                onClick={(e) => e.stopPropagation()}
+                className="relative w-full max-w-5xl bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden cursor-default mb-4"
+                transition={{ type: "spring", damping: 26, stiffness: 220 }}
+              >
+                {/* Image banner inside Modal */}
+                <div className="relative w-full aspect-[4/3] sm:aspect-video md:aspect-[21/9] overflow-hidden">
+                  <div className="absolute inset-0 scanlines pointer-events-none opacity-40" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent z-10" />
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover"
+                  />
 
-            {/* Custom Modal Sheet */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 16 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 16 }}
-              className="relative w-full max-w-5xl bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden z-10 max-h-[90vh] overflow-y-auto no-scrollbar"
-              transition={{ type: "spring", damping: 26, stiffness: 220 }}
-            >
-              {/* Image banner inside Modal */}
-              <div className="relative w-full aspect-video md:aspect-[21/9] overflow-hidden">
-                <div className="absolute inset-0 scanlines pointer-events-none opacity-40" />
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent z-10" />
-                <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover"
-                />
-
-                {/* Close Button */}
-                <button
-                  onClick={() => setSelectedProject(null)}
-                  className="absolute top-6 right-6 z-20 p-2.5 bg-black/80 hover:bg-red-600 text-white rounded-full border border-neutral-800 transition-colors cursor-pointer"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              </div>
-
-              {/* Contents list */}
-              <div className="p-8 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Left/Main Column: Title and Description */}
-                <div className="md:col-span-2 space-y-6">
-                  <div>
-                    <span className="font-mono text-xs tracking-widest text-red-500 uppercase block mb-1">
-                      {selectedProject.category}
-                    </span>
-                    <h2 className="font-anybody font-black text-3xl md:text-5xl tracking-normal text-white italic leading-tight">
-                      {selectedProject.title}
-                    </h2>
-                  </div>
-
-                  <hr className="border-neutral-900" />
-
-                  <div>
-                    <h4 className="font-mono text-[10px] tracking-widest text-neutral-500 uppercase mb-3">
-                      OVERVIEW // 요약
-                    </h4>
-                    <p className="font-sans text-sm md:text-base text-neutral-300 font-light leading-relaxed">
-                      {selectedProject.description}
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 className="font-mono text-[10px] tracking-widest text-neutral-500 uppercase mb-3">
-                      KEY METRICS & TAGS
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedProject.tags.map((tag, i) => (
-                        <span key={i} className="inline-flex items-center gap-1.5 px-3 py-1 bg-neutral-900 border border-neutral-800 text-[10px] font-mono text-neutral-400">
-                          <Tag className="w-2.5 h-2.5 text-red-600" />
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right Column: Key Details Sidebar */}
-                <div className="space-y-6 bg-neutral-900/40 p-6 border border-neutral-900 self-start">
-                  <h3 className="font-mono text-[11px] tracking-widest text-red-500 uppercase border-b border-neutral-800 pb-3">
-                    METRIC DETAILS
-                  </h3>
-
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center text-xs">
-                      <span className="font-mono text-neutral-500 flex items-center gap-1.5">
-                        <Calendar className="w-3.5 h-3.5 text-red-600" />
-                        RELEASE
-                      </span>
-                      <span className="font-mono text-white font-medium">{selectedProject.year}_SAEPIAN</span>
-                    </div>
-
-                    <div className="flex justify-between items-center text-xs">
-                      <span className="font-mono text-neutral-500 flex items-center gap-1.5">
-                        <Layers className="w-3.5 h-3.5 text-red-600" />
-                        VERTICAL
-                      </span>
-                      <span className="font-mono text-white text-right font-medium truncate max-w-[150px]">
-                        {selectedProject.category.split(" & ")[0]}
-                      </span>
-                    </div>
-
-                    <div className="flex justify-between items-center text-xs">
-                      <span className="font-mono text-neutral-500 flex items-center gap-1.5">
-                        <Compass className="w-3.5 h-3.5 text-red-600" />
-                        STUDIO
-                      </span>
-                      <span className="font-mono text-white font-medium">SEOUL LAB</span>
-                    </div>
-                  </div>
-
-                  <hr className="border-neutral-800" />
-
+                  {/* Close Button */}
                   <button
                     onClick={() => setSelectedProject(null)}
-                    className="w-full py-3 bg-red-600 hover:bg-white hover:text-black font-sans text-xs font-bold tracking-widest text-white uppercase transition-colors"
+                    className="absolute top-4 right-4 z-20 p-2.5 bg-black/80 hover:bg-red-600 text-white rounded-full border border-neutral-800 transition-colors cursor-pointer"
                   >
-                    CLOSE MATRIC VIEWER
+                    <X className="w-4 h-4" />
                   </button>
                 </div>
-              </div>
-            </motion.div>
-          </div>
+
+                {/* Contents list */}
+                <div className="p-5 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                  {/* Left/Main Column: Title and Description */}
+                  <div className="md:col-span-2 space-y-5">
+                    <div>
+                      <span className="font-mono text-xs tracking-widest text-red-500 uppercase block mb-1">
+                        {selectedProject.category}
+                      </span>
+                      <h2 className="font-anybody font-black text-2xl sm:text-3xl md:text-5xl tracking-normal text-white italic leading-tight">
+                        {selectedProject.title}
+                      </h2>
+                    </div>
+
+                    <hr className="border-neutral-900" />
+
+                    <div>
+                      <h4 className="font-mono text-[10px] tracking-widest text-neutral-500 uppercase mb-3">
+                        OVERVIEW // 요약
+                      </h4>
+                      <p className="font-sans text-sm md:text-base text-neutral-300 font-light leading-relaxed">
+                        {selectedProject.description}
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-mono text-[10px] tracking-widest text-neutral-500 uppercase mb-3">
+                        KEY METRICS & TAGS
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {selectedProject.tags.map((tag, i) => (
+                          <span key={i} className="inline-flex items-center gap-1.5 px-3 py-1 bg-neutral-900 border border-neutral-800 text-[10px] font-mono text-neutral-400">
+                            <Tag className="w-2.5 h-2.5 text-red-600" />
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Right Column: Key Details Sidebar */}
+                  <div className="space-y-5 bg-neutral-900/40 p-5 border border-neutral-900 self-start">
+                    <h3 className="font-mono text-[11px] tracking-widest text-red-500 uppercase border-b border-neutral-800 pb-3">
+                      METRIC DETAILS
+                    </h3>
+
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="font-mono text-neutral-500 flex items-center gap-1.5">
+                          <Calendar className="w-3.5 h-3.5 text-red-600" />
+                          RELEASE
+                        </span>
+                        <span className="font-mono text-white font-medium">{selectedProject.year}_SAEPIAN</span>
+                      </div>
+
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="font-mono text-neutral-500 flex items-center gap-1.5">
+                          <Layers className="w-3.5 h-3.5 text-red-600" />
+                          VERTICAL
+                        </span>
+                        <span className="font-mono text-white text-right font-medium truncate max-w-[150px]">
+                          {selectedProject.category.split(" & ")[0]}
+                        </span>
+                      </div>
+
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="font-mono text-neutral-500 flex items-center gap-1.5">
+                          <Compass className="w-3.5 h-3.5 text-red-600" />
+                          STUDIO
+                        </span>
+                        <span className="font-mono text-white font-medium">SEOUL LAB</span>
+                      </div>
+                    </div>
+
+                    <hr className="border-neutral-800" />
+
+                    <button
+                      onClick={() => setSelectedProject(null)}
+                      className="w-full py-3 bg-red-600 hover:bg-white hover:text-black font-sans text-xs font-bold tracking-widest text-white uppercase transition-colors cursor-pointer"
+                    >
+                      CLOSE MATRIX VIEWER
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </section>
