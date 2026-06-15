@@ -117,7 +117,7 @@ export default function PortfolioSection() {
                     src={project.image}
                     alt={project.title}
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover object-top grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700"
+                    className="w-full h-full object-cover object-top grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-90 group-hover:scale-105 transition-all duration-700"
                   />
 
                   {/* Logo Overlay — centered on the image */}
