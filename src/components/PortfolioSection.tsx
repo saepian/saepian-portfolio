@@ -52,7 +52,7 @@ export default function PortfolioSection() {
             <h2 className="font-anybody text-4xl md:text-6xl font-black italic text-stroke-white tracking-tighter">
               PORTFOLIO // <span className="text-white not-italic">아카이브</span>
             </h2>
-            <p className="mt-3 flex items-start gap-2 font-mono text-xs text-neutral-500 tracking-wide leading-relaxed max-w-md">
+            <p className="mt-3 flex items-center gap-2 font-mono text-xs text-neutral-500 tracking-wide whitespace-nowrap">
               <span className="text-red-600 mt-px shrink-0">—</span>
               SI 프로젝트의 특성상 내부 시스템의 경우 화면을 오픈할 수 없어 공식 홈페이지로 대체합니다.
             </p>
