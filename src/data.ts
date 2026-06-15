@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
   {
     id: "01",
     title: "SAEPIAN GLITCH ASSEMBLY",
-    imageTitle: "",
+    imageTitle: "SAEPIAN\nGLITCH ASSEMBLY",
     category: "ART DIRECTION & IDENTITY",
     year: "2026",
     image: portfolio01,
