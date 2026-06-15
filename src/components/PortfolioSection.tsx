@@ -333,6 +333,11 @@ export default function PortfolioSection() {
                     >
                       CLOSE MATRIX VIEWER
                     </button>
+
+                    <p className="flex items-start gap-1.5 font-mono text-[10px] text-neutral-600 leading-relaxed">
+                      <span className="text-red-800 shrink-0 mt-px">—</span>
+                      SI 프로젝트의 특성상 내부 시스템의 경우 화면을 오픈할 수 없어 공식 홈페이지로 대체합니다.
+                    </p>
                   </div>
                 </div>
               </motion.div>
