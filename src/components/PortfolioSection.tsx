@@ -112,15 +112,18 @@ export default function PortfolioSection() {
                     className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700"
                   />
 
-                  {/* Image Title Overlay — centered on the image */}
-                  {project.imageTitle && (
+                  {/* Logo Overlay — centered on the image */}
+                  {project.logo && (
                     <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none p-4">
-                      <div className="bg-black/70 backdrop-blur-sm px-5 py-3 border-l-[3px] border-red-600 max-w-[90%]">
-                        <span className="font-mono text-[8px] tracking-[0.25em] text-red-500 uppercase block mb-1">WORK</span>
-                        <span className="font-anybody font-black italic text-white text-lg md:text-2xl xl:text-3xl tracking-tighter leading-tight whitespace-pre-line block">
-                          {project.imageTitle}
-                        </span>
-                      </div>
+                      <img
+                        src={project.logo}
+                        alt=""
+                        onError={(e) => {
+                          const wrap = e.currentTarget.parentElement;
+                          if (wrap) wrap.style.display = "none";
+                        }}
+                        className="max-h-[45%] max-w-[65%] object-contain drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]"
+                      />
                     </div>
                   )}
 
@@ -201,15 +204,18 @@ export default function PortfolioSection() {
                     className="w-full h-full object-cover"
                   />
 
-                  {/* Image Title Overlay on modal */}
-                  {selectedProject.imageTitle && (
-                    <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none p-6">
-                      <div className="bg-black/70 backdrop-blur-sm px-7 py-5 border-l-[4px] border-red-600 max-w-[85%]">
-                        <span className="font-mono text-[9px] tracking-[0.3em] text-red-500 uppercase block mb-2">WORK</span>
-                        <span className="font-anybody font-black italic text-white text-3xl sm:text-4xl md:text-6xl tracking-tighter leading-tight whitespace-pre-line block">
-                          {selectedProject.imageTitle}
-                        </span>
-                      </div>
+                  {/* Logo Overlay on modal */}
+                  {selectedProject.logo && (
+                    <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none p-8">
+                      <img
+                        src={selectedProject.logo}
+                        alt=""
+                        onError={(e) => {
+                          const wrap = e.currentTarget.parentElement;
+                          if (wrap) wrap.style.display = "none";
+                        }}
+                        className="max-h-[50%] max-w-[60%] object-contain drop-shadow-[0_6px_30px_rgba(0,0,0,0.95)]"
+                      />
                     </div>
                   )}
 

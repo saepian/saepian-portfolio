@@ -8,6 +8,7 @@ export interface Project {
   description: string;
   tags: string[];
   featured: boolean;
+  logo?: string;
   client?: string;
   period?: string;
   studio?: string;
