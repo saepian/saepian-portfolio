@@ -8,7 +8,7 @@ export default function PortfolioSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [filter, setFilter] = useState<"all" | "website" | "si">("all");
 
-  const filteredProjects = PROJECTS.filter((p) => {
+  const filteredProjects = PROJECTS.slice(0, 10).filter((p) => {
     if (filter === "website") return p.category.toUpperCase().includes("WEBSITE");
     if (filter === "si") return p.category.toUpperCase().includes("SI PROJECT");
     return true;
