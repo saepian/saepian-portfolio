@@ -114,10 +114,13 @@ export default function PortfolioSection() {
 
                   {/* Image Title Overlay — centered on the image */}
                   {project.imageTitle && (
-                    <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none px-4">
-                      <span className="font-anybody font-black italic text-white text-xl md:text-3xl tracking-tighter text-center leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] whitespace-pre-line">
-                        {project.imageTitle}
-                      </span>
+                    <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none p-4">
+                      <div className="bg-black/70 backdrop-blur-sm px-5 py-3 border-l-[3px] border-red-600 max-w-[90%]">
+                        <span className="font-mono text-[8px] tracking-[0.25em] text-red-500 uppercase block mb-1">WORK</span>
+                        <span className="font-anybody font-black italic text-white text-lg md:text-2xl xl:text-3xl tracking-tighter leading-tight whitespace-pre-line block">
+                          {project.imageTitle}
+                        </span>
+                      </div>
                     </div>
                   )}
 
@@ -200,10 +203,13 @@ export default function PortfolioSection() {
 
                   {/* Image Title Overlay on modal */}
                   {selectedProject.imageTitle && (
-                    <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none px-6">
-                      <span className="font-anybody font-black italic text-white text-2xl sm:text-4xl md:text-5xl tracking-tighter text-center leading-tight drop-shadow-[0_2px_16px_rgba(0,0,0,0.95)] whitespace-pre-line">
-                        {selectedProject.imageTitle}
-                      </span>
+                    <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none p-6">
+                      <div className="bg-black/70 backdrop-blur-sm px-7 py-5 border-l-[4px] border-red-600 max-w-[85%]">
+                        <span className="font-mono text-[9px] tracking-[0.3em] text-red-500 uppercase block mb-2">WORK</span>
+                        <span className="font-anybody font-black italic text-white text-3xl sm:text-4xl md:text-6xl tracking-tighter leading-tight whitespace-pre-line block">
+                          {selectedProject.imageTitle}
+                        </span>
+                      </div>
                     </div>
                   )}
 
