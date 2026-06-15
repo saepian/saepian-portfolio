@@ -6,11 +6,11 @@ import { X, ArrowRight, Tag, Building2, CalendarDays, Briefcase, ExternalLink } 
 
 export default function PortfolioSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [filter, setFilter] = useState<"all" | "featured" | "experimental">("all");
+  const [filter, setFilter] = useState<"all" | "website" | "si">("all");
 
   const filteredProjects = PROJECTS.filter((p) => {
-    if (filter === "featured") return p.featured;
-    if (filter === "experimental") return p.tags.includes("WebGL") || p.tags.includes("Interactive Map") || p.tags.includes("Web Audio API");
+    if (filter === "website") return p.category.toUpperCase().includes("WEBSITE");
+    if (filter === "si") return p.category.toUpperCase().includes("SI");
     return true;
   });
 
@@ -56,17 +56,21 @@ export default function PortfolioSection() {
 
           {/* Filter System */}
           <div className="flex items-center gap-2 border border-neutral-900 bg-neutral-950/80 p-1 rounded-sm">
-            {(["all", "featured", "experimental"] as const).map((t) => (
+            {([
+              { id: "all", label: "ALL" },
+              { id: "website", label: "WEBSITE" },
+              { id: "si", label: "SI PROJECT" },
+            ] as const).map((t) => (
               <button
-                key={t}
-                onClick={() => setFilter(t)}
+                key={t.id}
+                onClick={() => setFilter(t.id)}
                 className="px-4 py-1.5 font-sans font-semibold text-[10px] tracking-widest uppercase cursor-pointer rounded-sm transition-all duration-300"
                 style={{
-                  backgroundColor: filter === t ? "#dc2626" : "transparent",
-                  color: filter === t ? "#ffffff" : "#a3a3a3",
+                  backgroundColor: filter === t.id ? "#dc2626" : "transparent",
+                  color: filter === t.id ? "#ffffff" : "#a3a3a3",
                 }}
               >
-                {t}
+                {t.label}
               </button>
             ))}
           </div>
