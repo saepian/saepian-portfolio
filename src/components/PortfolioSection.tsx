@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { PROJECTS } from "../data";
 import { Project } from "../types";
-import { X, ArrowRight, Layers, Tag, Calendar, Compass } from "lucide-react";
+import { X, ArrowRight, Tag, Building2, CalendarDays, Briefcase, ExternalLink } from "lucide-react";
 
 export default function PortfolioSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -262,34 +262,50 @@ export default function PortfolioSection() {
                     </h3>
 
                     <div className="space-y-4">
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="font-mono text-neutral-500 flex items-center gap-1.5">
-                          <Calendar className="w-3.5 h-3.5 text-red-600" />
-                          RELEASE
+                      <div className="flex justify-between items-start gap-3 text-xs">
+                        <span className="font-mono text-neutral-500 flex items-center gap-1.5 shrink-0">
+                          <Building2 className="w-3.5 h-3.5 text-red-600" />
+                          고객사
                         </span>
-                        <span className="font-mono text-white font-medium">{selectedProject.year}_SAEPIAN</span>
-                      </div>
-
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="font-mono text-neutral-500 flex items-center gap-1.5">
-                          <Layers className="w-3.5 h-3.5 text-red-600" />
-                          VERTICAL
-                        </span>
-                        <span className="font-mono text-white text-right font-medium truncate max-w-[150px]">
-                          {selectedProject.category.split(" & ")[0]}
+                        <span className="font-mono text-white text-right font-medium">
+                          {selectedProject.client || "—"}
                         </span>
                       </div>
 
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="font-mono text-neutral-500 flex items-center gap-1.5">
-                          <Compass className="w-3.5 h-3.5 text-red-600" />
-                          STUDIO
+                      <div className="flex justify-between items-start gap-3 text-xs">
+                        <span className="font-mono text-neutral-500 flex items-center gap-1.5 shrink-0">
+                          <CalendarDays className="w-3.5 h-3.5 text-red-600" />
+                          참여기간
                         </span>
-                        <span className="font-mono text-white font-medium">SEOUL LAB</span>
+                        <span className="font-mono text-white text-right font-medium">
+                          {selectedProject.period || "—"}
+                        </span>
+                      </div>
+
+                      <div className="flex justify-between items-start gap-3 text-xs">
+                        <span className="font-mono text-neutral-500 flex items-center gap-1.5 shrink-0">
+                          <Briefcase className="w-3.5 h-3.5 text-red-600" />
+                          소속회사
+                        </span>
+                        <span className="font-mono text-white text-right font-medium">
+                          {selectedProject.studio || "—"}
+                        </span>
                       </div>
                     </div>
 
                     <hr className="border-neutral-800" />
+
+                    {selectedProject.link && (
+                      <a
+                        href={selectedProject.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full py-3 bg-neutral-800 hover:bg-neutral-700 font-sans text-xs font-bold tracking-widest text-white uppercase transition-colors cursor-pointer flex items-center justify-center gap-2"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        바로가기
+                      </a>
+                    )}
 
                     <button
                       onClick={() => setSelectedProject(null)}

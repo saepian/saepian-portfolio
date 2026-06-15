@@ -26,7 +26,11 @@ export const PROJECTS: Project[] = [
     image: portfolio01,
     description: "An open-source sensory framework fusing aggressive high-contrast visual glitches with spatial physical installations around Seoul's dark alleys.",
     tags: ["WebGL", "Motion Design", "Identity", "Glitch Art"],
-    featured: true
+    featured: true,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "02",
@@ -37,7 +41,11 @@ export const PROJECTS: Project[] = [
     image: portfolio02,
     description: "A philosophy-driven brand publication demonstrating how absolute subtraction (deleting everything non-essential) maximizes brand resonance.",
     tags: ["Premium Print", "Hot Foil", "Concept Design", "Booklets"],
-    featured: true
+    featured: true,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "03",
@@ -48,7 +56,11 @@ export const PROJECTS: Project[] = [
     image: portfolio03,
     description: "Interactive architectural light installation utilizing signal-red and absolute black beams to reinterpret urban flows in industrial complexes.",
     tags: ["Interactive Map", "Laser Tech", "Generative Audio", "Installation"],
-    featured: true
+    featured: true,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "04",
@@ -59,7 +71,11 @@ export const PROJECTS: Project[] = [
     image: portfolio04,
     description: "A micro-website capturing the auditory emptiness of deep midnight. Awarded for its pure user-interactive physical typography.",
     tags: ["Web Audio API", "Interactive Typography", "Noir Sound"],
-    featured: false
+    featured: false,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "05",
@@ -70,7 +86,11 @@ export const PROJECTS: Project[] = [
     image: portfolio05,
     description: "A custom kinetic-type-renderer for streaming telemetry data into giant high-contrast outdoor billboards.",
     tags: ["Canvas API", "Hardware Interface", "Real-Time Dev"],
-    featured: false
+    featured: false,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "06",
@@ -81,7 +101,11 @@ export const PROJECTS: Project[] = [
     image: portfolio06,
     description: "An AI sandbox mapping real-time cognitive responses into interactive neural networks with abstract ink-bleed textures.",
     tags: ["WebGL", "AI Sandbox", "Real-Time", "Noir Texture"],
-    featured: true
+    featured: true,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "07",
@@ -92,7 +116,11 @@ export const PROJECTS: Project[] = [
     image: portfolio07,
     description: "A study on algorithmic kinetic friction, mapping complex real-time physics data into fluid interface movements.",
     tags: ["Vector Math", "Canvas API", "Interactive"],
-    featured: false
+    featured: false,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "08",
@@ -103,7 +131,11 @@ export const PROJECTS: Project[] = [
     image: portfolio08,
     description: "3D liquid mesh rendering utilizing noise-driven WebGL shaders to visualize abstract modern sculptures.",
     tags: ["WebGL", "Fluid Dynamics", "3D Render"],
-    featured: true
+    featured: true,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "09",
@@ -114,7 +146,11 @@ export const PROJECTS: Project[] = [
     image: portfolio09,
     description: "Deep-level serial interface linking industrial controller signals to dynamic live typographic renders.",
     tags: ["Serial Link", "Hardware", "Interactive Typography"],
-    featured: false
+    featured: false,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "10",
@@ -125,7 +161,11 @@ export const PROJECTS: Project[] = [
     image: portfolio10,
     description: "Sensory ambient installation recreating thermal dynamics in absolute dark with precise signal laser streams.",
     tags: ["Laser Tech", "Noir Sound", "WebGL"],
-    featured: true
+    featured: true,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "11",
@@ -136,7 +176,11 @@ export const PROJECTS: Project[] = [
     image: portfolio11,
     description: "Transforming real-time ambient noise feeds into glowing code matrices that dynamically respond to viewer movement.",
     tags: ["Interactive Typography", "Web Audio API", "AI Sandbox"],
-    featured: false
+    featured: false,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "12",
@@ -147,7 +191,11 @@ export const PROJECTS: Project[] = [
     image: portfolio12,
     description: "Streaming telemetry chronological logs in beautiful monochrome dust particle configurations.",
     tags: ["Canvas API", "Live Feed", "Chrono Layout"],
-    featured: false
+    featured: false,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "13",
@@ -158,7 +206,11 @@ export const PROJECTS: Project[] = [
     image: portfolio13,
     description: "Exploring mathematical vectors inside canvas viewports to produce breathtaking aesthetic flows on click triggers.",
     tags: ["WebGL", "Vector Math", "Interactive Map"],
-    featured: true
+    featured: true,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "14",
@@ -169,7 +221,11 @@ export const PROJECTS: Project[] = [
     image: portfolio14,
     description: "An interactive editorial code publication presenting algorithmic pattern designs on ultra high-contrast displays.",
     tags: ["Web Audio API", "Concept Design", "Noir Sound"],
-    featured: false
+    featured: false,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   },
   {
     id: "15",
@@ -180,7 +236,11 @@ export const PROJECTS: Project[] = [
     image: portfolio15,
     description: "An astronomical data-viz tracing deep space signal anomalies using high-rendering GL point maps.",
     tags: ["Interactive Map", "GL Rendering", "Live Feed"],
-    featured: true
+    featured: true,
+    client: "",
+    period: "",
+    studio: "",
+    link: "",
   }
 ];
 

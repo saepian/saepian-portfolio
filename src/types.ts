@@ -8,6 +8,9 @@ export interface Project {
   description: string;
   tags: string[];
   featured: boolean;
+  client?: string;
+  period?: string;
+  studio?: string;
   link?: string;
 }
 
