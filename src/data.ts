@@ -1,12 +1,28 @@
 import { Project, Award, Participation } from "./types";
 
+import portfolio01 from "@/assets/portfolio_01.png";
+import portfolio02 from "@/assets/portfolio_02.png";
+import portfolio03 from "@/assets/portfolio_03.png";
+import portfolio04 from "@/assets/portfolio_04.png";
+import portfolio05 from "@/assets/portfolio_05.png";
+import portfolio06 from "@/assets/portfolio_06.png";
+import portfolio07 from "@/assets/portfolio_07.png";
+import portfolio08 from "@/assets/portfolio_08.png";
+import portfolio09 from "@/assets/portfolio_09.png";
+import portfolio10 from "@/assets/portfolio_10.png";
+import portfolio11 from "@/assets/portfolio_11.png";
+import portfolio12 from "@/assets/portfolio_12.png";
+import portfolio13 from "@/assets/portfolio_13.png";
+import portfolio14 from "@/assets/portfolio_14.png";
+import portfolio15 from "@/assets/portfolio_15.png";
+
 export const PROJECTS: Project[] = [
   {
     id: "01",
     title: "SAEPIAN GLITCH ASSEMBLY",
     category: "ART DIRECTION & IDENTITY",
     year: "2026",
-    image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1200",
+    image: portfolio01,
     description: "An open-source sensory framework fusing aggressive high-contrast visual glitches with spatial physical installations around Seoul's dark alleys.",
     tags: ["WebGL", "Motion Design", "Identity", "Glitch Art"],
     featured: true
@@ -16,7 +32,7 @@ export const PROJECTS: Project[] = [
     title: "THE MINIMALIST SUBTRACTION",
     category: "EDITORIAL & PACKAGING",
     year: "2025",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200",
+    image: portfolio02,
     description: "A philosophy-driven brand publication demonstrating how absolute subtraction (deleting everything non-essential) maximizes brand resonance.",
     tags: ["Premium Print", "Hot Foil", "Concept Design", "Booklets"],
     featured: true
@@ -26,7 +42,7 @@ export const PROJECTS: Project[] = [
     title: "METROPOLIS SAEPIAN EXPERIMENT",
     category: "SPATIAL CHOREOGRAPHY",
     year: "2026",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+    image: portfolio03,
     description: "Interactive architectural light installation utilizing signal-red and absolute black beams to reinterpret urban flows in industrial complexes.",
     tags: ["Interactive Map", "Laser Tech", "Generative Audio", "Installation"],
     featured: true
@@ -36,7 +52,7 @@ export const PROJECTS: Project[] = [
     title: "ECHOES OF SILENCE",
     category: "SOUND & SCREENSCAPE",
     year: "2025",
-    image: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=1200",
+    image: portfolio04,
     description: "A micro-website capturing the auditory emptiness of deep midnight. Awarded for its pure user-interactive physical typography.",
     tags: ["Web Audio API", "Interactive Typography", "Noir Sound"],
     featured: false
@@ -46,7 +62,7 @@ export const PROJECTS: Project[] = [
     title: "RAW SIGNAL SYSTEM",
     category: "DIGITAL PROTOCOLS",
     year: "2026",
-    image: "https://images.unsplash.com/photo-1554188248-986adbb73be4?q=80&w=1200",
+    image: portfolio05,
     description: "A custom kinetic-type-renderer for streaming telemetry data into giant high-contrast outdoor billboards.",
     tags: ["Canvas API", "Hardware Interface", "Real-Time Dev"],
     featured: false
@@ -56,7 +72,7 @@ export const PROJECTS: Project[] = [
     title: "NEURAL INTERFERENCE LAB",
     category: "GENERATIVE EXPERIENCE",
     year: "2026",
-    image: "https://images.unsplash.com/photo-1548345680-f5475ea5df84?q=80&w=1200",
+    image: portfolio06,
     description: "An AI sandbox mapping real-time cognitive responses into interactive neural networks with abstract ink-bleed textures.",
     tags: ["WebGL", "AI Sandbox", "Real-Time", "Noir Texture"],
     featured: true
@@ -66,7 +82,7 @@ export const PROJECTS: Project[] = [
     title: "VELOCITY DEVIATION",
     category: "MOTION & PHYSICS",
     year: "2025",
-    image: "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1200",
+    image: portfolio07,
     description: "A study on algorithmic kinetic friction, mapping complex real-time physics data into fluid interface movements.",
     tags: ["Vector Math", "Canvas API", "Interactive"],
     featured: false
@@ -76,7 +92,7 @@ export const PROJECTS: Project[] = [
     title: "LIQUID GEOMETRY LAB",
     category: "SENSORY CODING",
     year: "2026",
-    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1200",
+    image: portfolio08,
     description: "3D liquid mesh rendering utilizing noise-driven WebGL shaders to visualize abstract modern sculptures.",
     tags: ["WebGL", "Fluid Dynamics", "3D Render"],
     featured: true
@@ -86,7 +102,7 @@ export const PROJECTS: Project[] = [
     title: "SIGNAL CONDUIT PROTOCOL",
     category: "HARDWARE INTERACTION",
     year: "2025",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200",
+    image: portfolio09,
     description: "Deep-level serial interface linking industrial controller signals to dynamic live typographic renders.",
     tags: ["Serial Link", "Hardware", "Interactive Typography"],
     featured: false
@@ -96,7 +112,7 @@ export const PROJECTS: Project[] = [
     title: "THERMAL MATRIX SENSATION",
     category: "INSTALLATION DESIGN",
     year: "2026",
-    image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1200",
+    image: portfolio10,
     description: "Sensory ambient installation recreating thermal dynamics in absolute dark with precise signal laser streams.",
     tags: ["Laser Tech", "Noir Sound", "WebGL"],
     featured: true
@@ -106,7 +122,7 @@ export const PROJECTS: Project[] = [
     title: "THE COGNITIVE MATRIX",
     category: "NEURAL EXPERIENCE",
     year: "2026",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200",
+    image: portfolio11,
     description: "Transforming real-time ambient noise feeds into glowing code matrices that dynamically respond to viewer movement.",
     tags: ["Interactive Typography", "Web Audio API", "AI Sandbox"],
     featured: false
@@ -116,7 +132,7 @@ export const PROJECTS: Project[] = [
     title: "DUST MATRIX CHRONICLE",
     category: "DIGITAL MONUMENTS",
     year: "2025",
-    image: "https://images.unsplash.com/photo-1550537687-c91072c4792d?q=80&w=1200",
+    image: portfolio12,
     description: "Streaming telemetry chronological logs in beautiful monochrome dust particle configurations.",
     tags: ["Canvas API", "Live Feed", "Chrono Layout"],
     featured: false
@@ -126,7 +142,7 @@ export const PROJECTS: Project[] = [
     title: "AMBIENT FLUID VECTOR",
     category: "ARTWORK & VISUALS",
     year: "2026",
-    image: "https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=1200",
+    image: portfolio13,
     description: "Exploring mathematical vectors inside canvas viewports to produce breathtaking aesthetic flows on click triggers.",
     tags: ["WebGL", "Vector Math", "Interactive Map"],
     featured: true
@@ -136,7 +152,7 @@ export const PROJECTS: Project[] = [
     title: "VECTOR SAEPIAN PATTERNS",
     category: "CREATIVE CODING",
     year: "2025",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200",
+    image: portfolio14,
     description: "An interactive editorial code publication presenting algorithmic pattern designs on ultra high-contrast displays.",
     tags: ["Web Audio API", "Concept Design", "Noir Sound"],
     featured: false
@@ -146,7 +162,7 @@ export const PROJECTS: Project[] = [
     title: "RED SHIFT INTERSTELLAR",
     category: "SPATIAL EXPERIENCES",
     year: "2026",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200",
+    image: portfolio15,
     description: "An astronomical data-viz tracing deep space signal anomalies using high-rendering GL point maps.",
     tags: ["Interactive Map", "GL Rendering", "Live Feed"],
     featured: true
