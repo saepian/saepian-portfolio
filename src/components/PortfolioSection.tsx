@@ -10,7 +10,7 @@ export default function PortfolioSection() {
 
   const filteredProjects = PROJECTS.filter((p) => {
     if (filter === "website") return p.category.toUpperCase().includes("WEBSITE");
-    if (filter === "si") return p.category.toUpperCase().includes("SI");
+    if (filter === "si") return p.category.toUpperCase().includes("SI PROJECT");
     return true;
   });
 
