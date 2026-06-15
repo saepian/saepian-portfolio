@@ -7,7 +7,7 @@ export default function AboutSection() {
   const [activeSpecialty, setActiveSpecialty] = useState<string | null>("01");
   const [openYears, setOpenYears] = useState<Record<string, boolean>>({ "2026": true });
 
-  const SKILL_TARGETS = [90, 85, 80, 75] as const;
+  const SKILL_TARGETS = [95, 85, 90, 80] as const;
   const [skillVals, setSkillVals] = useState([0, 0, 0, 0]);
   const [animated, setAnimated] = useState(false);
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -123,7 +123,7 @@ export default function AboutSection() {
               <div className="space-y-3 bg-neutral-950/50 p-4 border border-neutral-900/30 rounded-[1px]">
                 {(["UI / UX DESIGN", "TYPOGRAPHY & LAYOUT", "WEB PUBLISHING (HTML/CSS)", "BRANDING & ILLUSTRATION"] as const).map((label, i) => (
                   <div key={label}>
-                    <div className="flex justify-between font-mono text-[9px] text-neutral-500 mb-1">
+                    <div className="flex justify-between font-mono text-xs text-neutral-500 mb-0">
                       <span>{label}</span>
                       <span className="text-red-500 font-bold">{skillVals[i]}%</span>
                     </div>
@@ -137,7 +137,7 @@ export default function AboutSection() {
 
                 <div className="pt-2 border-t border-neutral-900 flex justify-between items-center font-mono text-[10px]">
                   <span className="text-neutral-500">EXPERIENCE:</span>
-                  <span className="text-white font-extrabold tracking-wider">5+ YEARS</span>
+                  <span className="text-white font-extrabold tracking-wider">20+ YEARS</span>
                 </div>
               </div>
 

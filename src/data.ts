@@ -263,143 +263,206 @@ export const PARTICIPATIONS: Participation[] = [
   // 2026
   {
     id: "p1",
-    title: "Seoul Light Grid Installation",
-    client: "Seoul Metropolitan Govt",
-    category: "Spatial Media Wall",
+    title: "우리금융캐피탈 NEXT 정보계 구축 프로젝트",
+    client: "우리금융캐피탈",
+    category: "화면기획/디자인/퍼블리싱",
     year: "2026"
   },
   {
     id: "p2",
-    title: "Cybernetic Soundscapes Project",
-    client: "Art Center Nabi",
-    category: "Generative Performance",
-    year: "2026"
+    title: "농협은행 생성형 AI 플랫폼 프로젝트 고도화",
+    client: "농협은행",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2025"
   },
   {
     id: "p3",
-    title: "Typo-Choreography Billboard",
-    client: "COEX K-Pop Square",
-    category: "Dynamic Vector Signage",
-    year: "2026"
+    title: "우리은행 Gen-AI 플랫폼 구축 프로젝트",
+    client: "우리은행",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2025"
   },
   // 2025
   {
     id: "p4",
-    title: "Minimalist Luxury Packaging",
-    client: "Aesop Korea",
-    category: "Brand Identity Design",
+    title: "경찰청 KICS 고도화사업 관리자 포탈",
+    client: "경찰청",
+    category: "화면기획/디자인/퍼블리싱",
     year: "2025"
   },
   {
     id: "p5",
-    title: "Kinetics of Friction Exhibit",
-    client: "DDP Design Museum",
-    category: "Physical Installation",
+    title: "농협은행 생성형 AI 플랫폼 프로젝트",
+    client: "농협",
+    category: "화면기획/디자인/퍼블리싱",
     year: "2025"
   },
   {
     id: "p6",
-    title: "Fluidity Shaders Lab Research",
-    client: "Tokio Arts Group",
-    category: "WebGL Mobile Engine",
-    year: "2025"
+    title: "신한카드 GenAI 플랫폼 구축 프로젝트",
+    client: "신한카드",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2024"
   },
   // 2024
   {
     id: "p7",
-    title: "Asymmetric Modern Exhibitions",
-    client: "MMCA Korea",
-    category: "Interactive Design System",
+    title: "우리금융그룹 데이터 플랫폼",
+    client: "우리금융그룹",
+    category: "화면기획/디자인/퍼블리싱",
     year: "2024"
   },
   {
     id: "p8",
-    title: "Decentralized Audio Controls",
-    client: "L-Acoustics Integration",
-    category: "Real-Time Spatial Sound",
+    title: "스타벅스 CDP 프로젝트",
+    client: "스타벅스",
+    category: "퍼블리싱",
     year: "2024"
   },
   // 2023
   {
     id: "p9",
-    title: "Monochrome Typography Identity",
-    client: "Swiss Typography Center",
-    category: "Editorial Print System",
+    title: "우리은행 CDP 프로젝트",
+    client: "우리은행",
+    category: "화면기획/디자인/퍼블리싱",
     year: "2023"
   },
   {
     id: "p10",
-    title: "High-Contrast Telemetry Render",
-    client: "Tepco Labs Japan",
-    category: "Real-Time Data Dashboard",
+    title: "연세의료원 데이터레이크 시스템 구축",
+    client: "연세의료원",
+    category: "화면기획/디자인/퍼블리싱",
     year: "2023"
   },
   // 2022
   {
     id: "p11",
-    title: "Abstract Thermal Sculpture Room",
-    client: "Space Shinsegae Art dept",
-    category: "Laser Interaction Lab",
+    title: "우리카드 가명시스템 개발",
+    client: "우리카드",
+    category: "디자인/퍼블리싱",
     year: "2022"
   },
   {
     id: "p12",
-    title: "Spring Motion Engine V2",
-    client: "Creative Sandbox Seoul",
-    category: "WebGL Graphics Catalyst",
+    title: "삼성화재 가명시스템",
+    client: "삼성화재",
+    category: "디자인/퍼블리싱",
     year: "2022"
   },
   // 2021
   {
     id: "p13",
-    title: "Traditional Echoes Preservation",
-    client: "National Museum of Korea",
-    category: "Historical Preservation App",
-    year: "2021"
+    title: "삼성카드 가명시스템 개발",
+    client: "삼성카드",
+    category: "디자인/퍼블리싱",
+    year: "2022"
   },
   {
     id: "p14",
-    title: "Brutalist Coding Anthology Website",
-    client: "Awwwards Showcase",
-    category: "Virtual Exhibition Sandbox",
+    title: "우체국 차세대 종합금융시스템 BI포탈",
+    client: "우체국",
+    category: "화면기획/디자인/퍼블리싱",
     year: "2021"
   },
   // 2020
   {
     id: "p15",
-    title: "Urban Fluid Wave Simulation",
-    client: "COEX Wave Screens Media",
-    category: "Large-Scale Fluid Simulation",
-    year: "2020"
+    title: "우리은행 가명시스템 개발",
+    client: "우리은행",
+    category: "디자인/퍼블리싱",
+    year: "2021"
   },
   {
     id: "p16",
-    title: "Typographic Physical Soundboard",
-    client: "Nexon Computer Museum",
-    category: "Physical Tangible Controller",
-    year: "2020"
+    title: "삼성생명 데이터 비식별화 플랫폼",
+    client: "삼성생명",
+    category: "디자인/퍼블리싱",
+    year: "2021"
   },
   // ETC
   {
     id: "p17",
-    title: "Genesis Web Sound Ambient",
-    client: "Personal Sound Archive",
-    category: "Web Audio Experiment",
-    year: "2019"
+    title: "현대차증권 SMART-BI 시스템 구축",
+    client: "현대차증권",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2021"
   },
   {
     id: "p18",
-    title: "Noir Branding Blueprint Studio",
-    client: "Swiss Design School Thesis",
-    category: "Editorial Brand Research",
-    year: "2018"
+    title: "한국정보화진흥원 인공지능학습데이터 구축 프로젝트",
+    client: "한국정보화진흥원",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2021"
   },
   {
     id: "p19",
-    title: "Analog Wave Distortion Renderer",
-    client: "Tokyo Creative Club Expo",
-    category: "CRT Vector Screen Installation",
-    year: "2017"
+    title: "보건복지부 사회보장,사회서비스 프로젝트",
+    client: "보건복지부",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2021"
+  },
+    {
+    id: "p20",
+    title: "이베이 EDW 프로젝트 BI PORTAL",
+    client: "이베이",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2020"
+  },
+    {
+    id: "p21",
+    title: "GS칼텍스 기술표준 통합정보체계 구축",
+    client: "GS칼텍스",
+    category: "퍼블리싱",
+    year: "2020"
+  },
+    {
+    id: "p22",
+    title: "KB금융그룹 BI시스템",
+    client: "KB금융그룹",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2019"
+  },
+    {
+    id: "p23",
+    title: "KDB 산업은행 차세대 빅데이터 시스템",
+    client: "KDB 산업은행",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2019"
+  },
+    {
+    id: "p24",
+    title: "유진저축은행 정보계 시스템",
+    client: "유진저축은행",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2019"
+  },
+    {
+    id: "p25",
+    title: "롯데호텔&리조트 EIS & PORTAL",
+    client: "롯데호텔",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2018"
+  },
+    {
+    id: "p26",
+    title: "한국신용정보 BI시스템 ",
+    client: "한국신용정보",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2018"
+  },
+    {
+    id: "p27",
+    title: "KDB 산업은행 차세대 시스템 포탈",
+    client: "KDB 산업은행 ",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2018"
+  },
+    {
+    id: "p28",
+    title: "SK가스 고도화 프로젝트",
+    client: "SK가스",
+    category: "화면기획/디자인/퍼블리싱",
+    year: "2018"
   }
 ];
 
